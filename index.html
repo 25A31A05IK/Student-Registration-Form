@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Registration Form</title>
+</head>
+<style>
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #f4f8fb;
+        color: #0f172a;
+    }
+
+    #Form {
+        background-color: #ffffff;
+    }
+
+    #Heading {
+        text-align: center;
+    }
+
+    .Side-Headings {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .Division {
+        margin: 0 15px;
+    }
+
+    .Section-Division {
+        margin: 15px 30px;
+    }
+
+    .Section-Division label {
+        font-weight: 800;
+        color: #334155;
+    }
+
+    .Section-Division input,
+    select {
+        margin-top: 3px;
+        border-radius: 5px;
+        border: 1px solid #cbd5e1;
+        width: 25%;
+        height: 30px;
+        padding-left: 3px;
+        background-attachment: fixed;
+        background-color: #f1f5f9;
+    }
+
+    .Section-Division textarea {
+        margin-top: 3px;
+        border-radius: 5px;
+        border: 1px solid #cbd5e1;
+        width: 35%;
+        padding: 5px 15px;
+        resize: none;
+        background-attachment: fixed;
+        background-color: #f1f5f9;
+    }
+
+    .Section-Division input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+
+    .Section-Division input[type="radio"] {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    .Section-Division input[type="reset"] {
+        width: 70px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        background-color: #2563eb;
+        color: #ffffff;
+    }
+
+    .Section-Division input[type="submit"] {
+        width: 70px;
+        height: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        padding: 0;
+        background-color: #2563eb;
+        color: #ffffff;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #1e40af;
+        color: #ffffff;
+    }
+
+    input[type="reset"]:hover {
+        background-color: #1e40af;
+        color: #ffffff;
+    }
+
+    input[type="radio"]:hover {
+        background-color: #1e40af;
+        color: #ffffff;
+    }
+
+    .Lines {
+        border-color: #e2e8f0;
+    }
+</style>
+
+<body>
+    <h1 id="Heading"><u>Student Registration Form</u></h1>
+    <div class="Division">
+        <form id="Form" action="https://formbold.com/s/9BaBL" method="POST" enctype="multipart/form-data">
+            <h2 class="Side-Headings"> Personal Information:</h2>
+            <div class="Section-Division">
+                <label for="Name"> Full Name</label><br>
+                <input id="Name" type="text" name="Full Name" required placeholder="Your Name">
+            </div>
+            <div class="Section-Division">
+                <label for="Date Of Birth">Date Of Birth</label><br>
+                <input id="Date Of Birth" type="date" name="Date Of Birth" required placeholder="DOB">
+            </div>
+            <div class="Section-Division">
+                <label for="Email Address"> Email</label><br>
+                <input id="Email Address" type="email" name="Email Address" required placeholder="Your Email Address">
+            </div>
+            <div class="Section-Division">
+                <label for="Password"> Password</label><br>
+                <input id="Password" type="password" name="Password" required placeholder="Create Password">
+            </div>
+            <div class="Section-Division">
+                <label for="Password"> Confirm Password</label><br>
+                <input id="Confirm-Password" type="password" name="Password" required placeholder="Confirm Password">
+            </div>
+            <hr>
+            <h2 class="Side-Headings"> Contact Details:</h2>
+            <div class="Section-Division">
+                <label for="Phone Number"> Phone Number</label><br>
+                <input id="Phone Number" type="tel" name="Phone Number" required placeholder="+91 1234567890">
+            </div>
+            <div class="Section-Division">
+                <label for="Address">Address</label><br>
+                <textarea id="Address" name="Address" rows="5" required placeholder="Your Address"></textarea>
+            </div>
+            <hr class="Lines">
+            <h2 class="Side-Headings"> Academic Information:</h2>
+            <div class="Section-Division">
+                <label for="Graduation"> Graduation</label><br>
+                <select id="Graduation" name="Graduation" required>
+                    <option value="Selection">Select</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                    <option value=Undergraduate>Undergraduate</option>
+                    <option value="Intermediate"> Intermediate</option>
+                    <option value="Secondary Education">Secondary Education</option>
+                </select>
+                <select id="Course" name="Course" required>
+                    <option value="Selection">Select</option>
+                    <option value="M.TECH">M.TECH</option>
+                    <option value="MBA">MBA</option>
+                    <option value="M.Sc">M.Sc</option>
+                    <option value="B.TECH">B.TECH</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="BBA">BBA</option>
+                    <option value="1st year">1st year</option>
+                    <option value="2nd year">2nd year</option>
+                </select><br>
+            </div>
+            <div class="Section-Division">
+                <label for="Branch">Branch/Course</label><br>
+                <input id="Branch" type="text" name="Barnch" required placeholder="Your Course/Branch">
+            </div>
+            <div class="Section-Division">
+                <label for="College">University/College</label><br>
+                <textarea id="College" type="text" name="College" rows="2" required
+                    placeholder="Your University/College"></textarea>
+            </div>
+            <div class="Section-Division">
+                <label for="Passing Year">Passed/Passing year</label><br>
+                <input id="Passing year" type="number" name="Passing year" required
+                    placeholder="Your passed/passing year">
+            </div>
+            <div class="Section-Division">
+                <label for="Percentage">Percentage/CGPA</label><br>
+                <input id="Percentage" type="number" name="Percentage" required placeholder="Your Percentage/CGPA">
+            </div>
+            <hr class="Lines">
+            <h2 class="Side-Headings"> About:</h2>
+            <div class="Section-Division">
+                <label for="Genter"> Gender</label><br>
+                <input type="radio" id="Male" name="Gender">Male
+                <input type="radio" id="Female" name="Gender">Female
+            </div>
+            <div class="Section-Division">
+                <label for="Skills">Skills</label><br>
+                <textarea id="Skills" name="Skills" rows="5" required placeholder="Skills"></textarea>
+            </div>
+            <div class="Section-Division">
+                <label for="Resume"> Upload Resume</label><br>
+                <input type="file" id="Resume" name="Resume" accept=".pdf,.jpg,.doc,.docx">
+            </div>
+            <hr class="Lines">
+            <div class="Section-Division">
+                <label for="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    I agreed to the terms and conditions.
+                </label>
+            </div>
+            <div class="Section-Division">
+                <input id="Reset" name="Reset" type="reset">
+                <input id="Submition" name="Submition" type="submit" required>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
