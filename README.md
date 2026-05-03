@@ -30,7 +30,7 @@ A clean and responsive student registration form built using HTML and CSS. This 
 
 ## Live Demo
 
-https://25a31a05ik.github.io/student-registration-form/
+https://25a31a05ik.github.io/Student-Registration-Form/
 
 ---
 
